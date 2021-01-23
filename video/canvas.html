@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>サイトタイトル</title>
+  <meta name="description" content="ディスクリプションを入力">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="training.js"></script>
+</head>
+
+<body>
+<div id="videoPreview" hidden="hidden" >
+  <p>video preview</p>
+</div>
+
+<div id="canvasPreview">
+  <p>canvas preview</p>
+</div>
+
+<input type="button" value="トレーニング開始" class="training_btn" id="training_btn" onclick="training()">
+<div>表情測定中</div>
+
+<input type="file" name="training_photos[]" multiple="multiple">
+<p>指示</p>
+  <script src="displayVideo.js"></script>
+
+
+</body>
+</html>
