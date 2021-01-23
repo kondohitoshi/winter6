@@ -1,12 +1,48 @@
 {% extends "bootstrap/base.html" %}
 
-{% block title %}Hello{% endblock %}
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sample1.css') }}">
+</head>
+
+{% block title %}Hello {% endblock %}
 
 {% block content %}
 <div class="container">
     <div class="page-header">
-    <h1>Hello World!</h1>
-    <button type="button" class="btn btn-success">aaa</button>
+     <h1>
+      <p align="center">
+       <font size="10">顔表情予測</font>
+      </p>
+     </h1>
     </div>
 </div>
+
+<p align="center">
+
+予測したい顔写真を選択してください
+<label for=”id_img” >
+<span>ファイルを選択</span>
+<input id=”id_img” type=”file”>
+</label>
+<input type="file" name="file">
+
+<br>
+
+<button type="button" class="btn btn-success">実行</button>
+
+<br><br><br>
+
+<font size="6">選択した写真</font>
+
+<br>
+
+<img src=="">
+
+<br>
+
+<font size="6">表情:</font>
+
+</p>
+
+
 {% endblock %}
