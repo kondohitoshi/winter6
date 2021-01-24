@@ -4,6 +4,7 @@
 
 {% block content %}
 <link rel="stylesheet" href="../static/css/style.css">
+<script type="text/javascript" src="../static/js/training.js"></script>
 
 <div class="container">
     <div class="page-header">
@@ -18,9 +19,9 @@
 <p align="center">
 
 予測したい顔写真を選択してください
-<label for=”id_img” >
+<label for="id_img" >
 <span>ファイルを選択</span>
-<input id=”id_img” type=”file”>
+<input id="id_img" type="file">
 </label>
 <input type="file" name="file">
 
@@ -42,5 +43,32 @@
 
 </p>
 
+
+
+
+<div class="mt-4">
+    <div id="videoPreview" hidden="hidden" >
+        <p>video preview</p>
+    </div>
+
+    <div id="canvasPreview">
+        <p>WEBカメラ</p>
+    </div>
+
+    <input type="button" value="トレーニング開始" class="training_btn" id="training_btn btn btn-success" onclick="training()">
+        <div>表情測定中</div>
+    <div id="mydiv"><p>こんにちは！</p></div>
+
+    <div class="snap-list-wrapper" style="height:60px">
+        <ul id="snap-list" class="horizontal-list">
+        </ul>
+    </div>
+
+    <input type="file" name="training_photos[]" multiple="multiple" style="display:none">
+
+    <script type="text/javascript" src="../static/js/displayVideo.js"></script>
+
+
+</div>
 
 {% endblock %}

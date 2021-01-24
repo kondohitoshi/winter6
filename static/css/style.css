@@ -15,3 +15,29 @@ cursor:pointer;
 span:hover {
 background: #000;
 }
+
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background-color: #a7ffd2;
+}
+
+/*　横スクロール　*/
+.item {
+    /* 横スクロール用 */
+    display: inline-block;
+    width: 180px;
+
+    height: 120px;
+    margin: 16px;
+    font-size: 48px;
+    background: rgba(255, 0, 0, 0.4);
+}
+
+/*　中の写真　*/
+.snap-photo {
+    width: 180px;
+
+    height: 120px;
+}

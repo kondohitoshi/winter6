@@ -18,11 +18,16 @@
   <p>canvas preview</p>
 </div>
 
-<input type="button" value="トレーニング開始" class="training_btn" id="training_btn" onclick="training()">
+<input type="button" value="トレーニング開始" class="training_btn" id="training_btn btn btn-success" onclick="training()">
 <div>表情測定中</div>
+<div id="mydiv"><p>指示</p></div>
 
-<input type="file" name="training_photos[]" multiple="multiple">
-<p>指示</p>
+<div class="snap-list list-group list-group-horizontal" style="height:60px">
+snap-list
+  <ul id="snap-list" class="snap-list">
+  </ul>
+</div>
+<input type="file" name="training_photos[]" multiple="multiple" hidden="hidden">
   <script src="displayVideo.js"></script>
 
 
